@@ -72,6 +72,19 @@
                             <img src="img/icons/instagram.png" alt=""></div>
                     </a>
                 </div>
+                <div class="hamburger">
+                    <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="37.7392" height="3.65218" rx="1.82609" fill="#033F88"/>
+                        <rect y="12.174" width="37.7392" height="3.65218" rx="1.82609" fill="#033F88"/>
+                        <rect y="24.3478" width="37.7392" height="3.65218" rx="1.82609" fill="#033F88"/>
+                        </svg>
+                </div>
+                <div class="close">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.2528 13.2527L13.2684 38.2371" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M37.7628 38.2371L12.7784 13.2527" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="header_time">
                     Пн - пт <br>
                     8:00 - 17:00
@@ -80,18 +93,19 @@
         </div>
         </div>
         <div class="container">
+
             <nav class="nav">
                 <div class="menu">
-                    <div class="menu_item"><a href="" class="menu_link">
+                    <div class="menu_item"><a href="index.html" class="menu_link">
                             Главная
                         </a></div>
-                    <div class="menu_item"><a href="" class="menu_link">
+                    <div class="menu_item"><a href="#services" class="menu_link">
                             Услуги
                         </a></div>
-                    <div class="menu_item"><a href="" class="menu_link">
+                    <div class="menu_item"><a href="#contacts" class="menu_link">
                             Заявка
                         </a></div>
-                    <div class="menu_item"><a href="" class="menu_link">
+                    <div class="menu_item"><a href="#gallery" class="menu_link">
                             Фотогалерея
                         </a></div>
                 </div>
@@ -102,9 +116,29 @@
             <h2 class="header_subtitle">
                 Наши опытные мастера избавят Вас от насекомых и микробов без вреда для здоровья
             </h2>
-            <a href="#form" class="header_link">
+            <div class="header_form contacts_form" id="form">
+                <form    action="https://formspree.io/f/xknkajoz"
+                            method="POST">
+                    <div class="form_title">
+                        Заполните заявку на бесплатную консультацию специалиста
+                    </div>
+                    <input type="text" class="form_input" required  name="name" value="Ваше имя">
+                    <input type="tel" class="form_input"  required name="tel" value="Телефон">
+                    <select name="select" id="" class="form_select">
+                    <option  value="Уcлуга">Уcлуга</option>
+                    <option  value="Дезинсекция горячим туманом">Дезинсекция горячим туманом</option>
+                    <option  value="Дезинсекция холодным туманом">Дезинсекция холодным туманом</option>
+                    <option  value="Комплексная обработка">Комплексная обработка</option>
+                    </select>
+                    <input name="number" required type="text" class="form_input " value="Размер участка">
+                    <input name="comment" type="text" class="form_input textarea"   value="Комментарий">
+                    <button type="submit" class="form_btn"> Оставить заявку</button>
+                    <span class="form_opacity">Ваша заявка принята, ожидайте звонка</span>
+                </form>
+            </div>
+            <button  class="header_link">
                     Оставить заявку
-            </a>
+            </button>
             <div class="header_work">
                 <ul class="work_list">
                     <li class="work_item">
@@ -197,7 +231,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services_title">
                 Услуги
@@ -214,8 +248,8 @@
                 </div>
                 <div class="services_box box2">
                     <div class="services_subtitle">
-                        Дезинсекция
-                        горячим туманом
+                        Дезинсекция 
+                        холодным туманом
                     </div>
                     <div class="services_more">
                         <a href="#" class="services_link"> Подробнее</a>
@@ -223,8 +257,8 @@
                 </div>
                 <div class="services_box box3">
                     <div class="services_subtitle">
-                        Дезинсекция
-                        горячим туманом
+                        Комплексная 
+            обработка
                     </div>
                     <div class="services_more">
                         <a href="#" class="services_link"> Подробнее</a>
@@ -233,36 +267,36 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery_title">
             Фотогалерея
         </div>
         <div class="gallery_body">
             <a data-fancybox="gallery" data-src="img/gal6.png">
-                <img src="img/gal6.png" class="gallery_img" />
+                <img src="img/gal6.png" class="gallery_img g1" />
             </a>
 
             <a data-fancybox="gallery" data-src="img/gal2.png" class="g2">
-                <img src="img/gal2.png" class="gallery_img"/>
+                <img src="img/gal2.png" class="gallery_img g2"/>
             </a>
 
             <a data-fancybox="gallery" data-src="img/gal1.png">
-                <img src="img/gal1.png" class="gallery_img"/>
+                <img src="img/gal1.png" class="gallery_img g3"/>
             </a>
             <a data-fancybox="gallery" data-src="img/gal3.png">
-                <img src="img/gal3.png" class="gallery_img"/>
+                <img src="img/gal3.png" class="gallery_img g4"/>
             </a>
             <a data-fancybox="gallery" data-src="img/gal8.png">
-                <img src="img/gal8.png" class="gallery_img"/>
+                <img src="img/gal8.png" class="gallery_img g5"/>
             </a>
             <a data-fancybox="gallery" data-src="img/gal1.png" class="g6">
-                <img src="img/gal5.png" class="gallery_img"/>
+                <img src="img/gal5.png" class="gallery_img g6"/>
             </a>
             <a data-fancybox="gallery" data-src="img/gal4.png">
-                <img src="img/gal4.png" class="gallery_img"/>
+                <img src="img/gal4.png" class="gallery_img g7"/>
             </a>
             <a data-fancybox="gallery" data-src="img/gal7.png">
-                <img src="img/gal7.png" class="gallery_img"/>
+                <img src="img/gal7.png" class="gallery_img g8"/>
             </a>
         </div>
     </section>
@@ -328,35 +362,30 @@
                     </div>
                 </div>
             </div>
-            <div class="line">
-                <div class="line_img"> </div>
-                <div class="line_img"></div>
-                <div class="line_img"></div>
-                <div class="line_img"></div>
-                <div class="line_img"></div>
-                <div class="line_img_big "></div>
-            </div>
+            <input type="range" min="1" max="6"   class="line">
+            <div class="input_border">0</div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts_body">
                 <div class="contacts_form" id="form">
-                    <form action="#">
+                    <form    action="https://formspree.io/f/xknkajoz"
+                                method="POST">
                         <div class="form_title">
                             Заполните заявку на бесплатную консультацию специалиста
                         </div>
-                        <input type="text" class="form_input"   value="Ваше имя">
-                        <input type="tel" class="form_input"    value="Телефон">
-                        <select name="" id="" class="form_select">
+                        <input type="text" class="form_input" required  name="name" value="Ваше имя">
+                        <input type="tel" class="form_input"  required name="tel" value="Телефон">
+                        <select name="select" id="" class="form_select">
                         <option  value="Уcлуга">Уcлуга</option>
                         <option  value="Дезинсекция горячим туманом">Дезинсекция горячим туманом</option>
                         <option  value="Дезинсекция холодным туманом">Дезинсекция холодным туманом</option>
                         <option  value="Комплексная обработка">Комплексная обработка</option>
                         </select>
-                        <input type="text" class="form_input " value="Размер участка">
-                        <input type="text" class="form_input textarea"   value="Комментарий">
-                        <button class="form_btn"> Оставить заявку</button>
+                        <input name="number" required type="text" class="form_input " value="Размер участка">
+                        <input name="comment" type="text" class="form_input textarea"   value="Комментарий">
+                        <button type="submit" class="form_btn"> Оставить заявку</button>
                         <span class="form_opacity">Ваша заявка принята, ожидайте звонка</span>
                     </form>
                 </div>
@@ -410,19 +439,22 @@
                     </a>
                 </div>
                     <div class="menu footer_menu">
-                        <div class="menu_item"><a href="" class="menu_link footer_menu_link">
+                        <div class="menu_item"><a href="index.html" class="menu_link footer_menu_link">
                                 Главная
                             </a></div>
-                        <div class="menu_item"><a href="" class="menu_link footer_menu_link">
+                        <div class="menu_item"><a href="#services" class="menu_link footer_menu_link">
                                 Услуги
                             </a></div>
-                        <div class="menu_item"><a href="" class="menu_link footer_menu_link">
+                        <div class="menu_item"><a href="#contacts" class="menu_link footer_menu_link">
                                 Заявка
                             </a></div>
-                        <div class="menu_item"><a href="" class="menu_link footer_menu_link">
+                        <div class="menu_item"><a href="#gallery" class="menu_link footer_menu_link">
                                 Фотогалерея
                             </a></div>
                     </div>
+            </div>
+            <div class="footer_text">
+                Оставляя заявку на сайте, Вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
             </div>
         </div>
     </footer>
