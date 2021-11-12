@@ -6,6 +6,9 @@
     color: #033F88
 html
     scroll-behavior: smooth   
+    width: 100%
+    max-width: 100%
+    overflow-x: hidden
 a
     text-decoration: none   
 li
@@ -422,6 +425,8 @@ body
 @media ( max-width: 768px )
     .body
         position: relative
+    .nav
+        position: relative
     .header_time
         display: none
     .container 
@@ -430,9 +435,9 @@ body
         margin-right: 17px
         display: block
     .close
-        display: none
-        z-index: 13
-        margin-right: 40px
+        position: absolute
+        top: 50px
+        right: 20px
     .header_social
         flex: 0 1 15%
     .menu
@@ -502,10 +507,9 @@ body
 @media ( max-width: 321px )
     .container
         max-width: 316px
-
     .header
         position: relative
-        margin-bottom: 250px
+        padding-bottom: 50px
     .header_mobile
         display: none
     .header_email
@@ -519,15 +523,18 @@ body
         font-size: 27px
     .header_title
         font-size: 16px
+        text-align: center
     .header_subtitle
         font-size: 14px
+        text-align: center
+        margin-top: 10px
     .header_link
         font-size: 13px
         margin-bottom: 30px
     .work_list
         flex-direction: column
         position: absolute
-        top: 320px
+        top: 210px
         left: 15%
     .work_item
         margin-top: 30px
@@ -559,6 +566,8 @@ body
         max-width: 100%
         border-radius: 0
         max-height: 100%
+        margin-top: 10px
+        margin-bottom: 10px
     .form_title
         font-size: 14px
         font-weight: bold
@@ -578,3 +587,5 @@ body
         flex-direction: column
     .active
         transform: translateX(0)
+    .header_link
+        display: none
